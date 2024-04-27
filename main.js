@@ -24,23 +24,23 @@
 
 //Second
 
-const fs = require("fs/promises");
+// const fs = require("fs/promises");
 
-async function main(folder) {
-  try {
-    const dir = await fs.readdir("../Node2");
-    console.log(dir);
+// async function main(folder) {
+//   try {
+//     const dir = await fs.readdir("../Node2");
+//     console.log(dir);
 
-    if (dir.includes(folder)) {
-      console.log(true);
-    } else {
-      console.log(false);
-    }
-  } catch (er) {
-    console.log(er);
-  }
-}
-main("first");
+//     if (dir.includes(folder)) {
+//       console.log(true);
+//     } else {
+//       console.log(false);
+//     }
+//   } catch (er) {
+//     console.log(er);
+//   }
+// }
+// main("first");
 
 //Third
 
@@ -77,43 +77,43 @@ main("first");
 
 //Fifth
 
-const http = require("http");
+// const http = require("http");
 
-const htmlContent = `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Table</title>
-</head>
-<body>
-    <h1>Simple HTML Table</h1>
-    <table border="1">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Country</th>
-      </tr>
-      <tr>
-        <td>Giorgi</td>
-        <td>20</td>
-        <td>GE</td>
-      </tr>
-      <tr>
-        <td>DAVIT</td>
-        <td>21</td>
-        <td>GE</td>
-      </tr>
-    </table>
-  </body>
-</html>
-`;
+// const htmlContent = `
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Simple HTML Table</title>
+// </head>
+// <body>
+//     <h1>Simple HTML Table</h1>
+//     <table border="1">
+//       <tr>
+//         <th>Name</th>
+//         <th>Age</th>
+//         <th>Country</th>
+//       </tr>
+//       <tr>
+//         <td>Giorgi</td>
+//         <td>20</td>
+//         <td>GE</td>
+//       </tr>
+//       <tr>
+//         <td>DAVIT</td>
+//         <td>21</td>
+//         <td>GE</td>
+//       </tr>
+//     </table>
+//   </body>
+// </html>
+// `;
 
-const server = http.createServer((req, res) => {
-  res.end(htmlContent);
-});
+// const server = http.createServer((req, res) => {
+//   res.end(htmlContent);
+// });
 
-server.listen(1121, () => {
-  console.log("Server running at http://localhost:1121");
-});
+// server.listen(1121, () => {
+//   console.log("Server running at http://localhost:1121");
+// });
