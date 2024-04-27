@@ -24,25 +24,23 @@
 
 //Second
 
-// const fs = require("fs/promises");
+const fs = require("fs/promises");
 
-// async function main(folder) {
-//   try {
-//     const dir = await fs.readdir("../Node2");
-//     console.log(dir);
+async function main(folder) {
+  try {
+    const dir = await fs.readdir("../Node2");
+    console.log(dir);
 
-//     if (dir.includes(folder)) {
-//       console.log(true);
-//       return;
-//     }
-
-//     console.log(false);
-
-//   } catch (er) {
-//     console.log(er);
-//   }
-// }
-// main("first");
+    if (dir.includes(folder)) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  } catch (er) {
+    console.log(er);
+  }
+}
+main("first");
 
 //Third
 
