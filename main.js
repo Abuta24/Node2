@@ -12,7 +12,6 @@
 
 //     const fileextension = path.extname(nomalizedPath);
 
-//     console.log(NomalisedPath)
 //     console.log(basefilename);
 //     console.log(directoryname);
 //     console.log(fileextension);
